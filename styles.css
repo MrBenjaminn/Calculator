@@ -1,5 +1,7 @@
 * {
   user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 body {
@@ -44,7 +46,7 @@ body {
   border: solid 6px #c8dfe7;
   box-shadow: -6px -6px 25px rgba(229, 210, 228, 0.5),
   22px 2px 92px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition: transform 0.3s ease;
   padding: 6px;
 }
@@ -64,6 +66,7 @@ button {
   transition: transform 0.28s cubic-bezier(0.19, 1, 0.22, 1),
   box-shadow 0.28s cubic-bezier(0.19, 1, 0.22, 1);
   color: #e3e3e3;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button.pressed {
