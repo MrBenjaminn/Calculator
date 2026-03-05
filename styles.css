@@ -32,6 +32,10 @@ body {
 }
 
 .calculator-container {
+  max-height: 756px;
+  height: 70%;
+  max-width: 480px;
+  width: 90%;
   border-radius: 35px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -59,6 +63,7 @@ button {
   outline: none;
   transition: transform 0.28s cubic-bezier(0.19, 1, 0.22, 1),
   box-shadow 0.28s cubic-bezier(0.19, 1, 0.22, 1);
+  color: #e3e3e3;
 }
 
 button.pressed {
