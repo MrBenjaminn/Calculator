@@ -1,0 +1,128 @@
+* {
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CFE9F1;
+  font-family: sans-serif;
+}
+
+.display {
+  font-size: 68px;
+  color: white;
+  text-align: right;
+  padding: 12px 35px 12px 12px;
+  cursor: pointer;
+  grid-column: 1 / 5;
+  border-radius: 30px;
+  background-color: rgb(138, 154, 139);
+  border: solid 6px coral;
+  margin-bottom: 20px;
+  /*outline: #8f827e solid 1px;*/
+  outline: #c8dfe7 solid 1px;
+  outline-offset: -7px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.calculator-container {
+  max-height: 756px;
+  height: 70%;
+  max-width: 480px;
+  width: 90%;
+  border-radius: 35px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:  25% 15% 15% 15% 15% 15%;
+  background-color: coral;
+  border: solid 6px #c8dfe7;
+  box-shadow: -6px -6px 25px rgba(229, 210, 228, 0.5),
+  22px 2px 92px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 6px;
+}
+
+button {
+  border: none;
+  font-size: 22px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: coral;
+  margin: 10px;
+  box-shadow:
+    -6px -6px 10px rgba(250, 250, 250, 0.15),
+    4px 4px 9px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.28s cubic-bezier(0.19, 1, 0.22, 1),
+  box-shadow 0.28s cubic-bezier(0.19, 1, 0.22, 1);
+  color: #e3e3e3;
+}
+
+button.pressed {
+  box-shadow:  inset -4px -4px 14px rgba(250, 250, 250, 0.2),
+  inset 7px 5px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(2px) scale(0.97);
+  transition-duration: 0.15s;
+}
+
+.del {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.arrow {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.target {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.min {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+}
+
+.mult {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+
+.divid {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+}
+
+.sum {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+}
+
+.min {
+  grid-column:  4 / 5;
+  grid-row: 6 / 7;
+}
+
+.result {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  background-color: #c9e3ee;
+  /*box-shadow: none;*/
+  border: solid 1px white;
+  color: coral;
+}
+
+.zero {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
